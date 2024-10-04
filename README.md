@@ -34,3 +34,4 @@ DELETE /trainee/bookings/{id}: Cancel a booking
 This is the list of all the endpoints in your API categorized by user role
 
 and this is not 3days project
+i can complete this project but i need more time
