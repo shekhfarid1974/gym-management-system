@@ -64,7 +64,6 @@ const classes = ref([]);
 const showTrainerForm = ref(false);
 const showClassForm = ref(false);
 const availabilityError = ref('');
-
 // Add your JWT token here
 const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzI3OTgyMDUwLCJleHAiOjE3Mjc5ODU2NTAsIm5iZiI6MTcyNzk4MjA1MCwianRpIjoiMENVTEQ2T2dDcnpET3NzTyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.besUlTau2wF0diEqQ6czFfbqAHWrPgq2Rsc1Uudgud8';
 
