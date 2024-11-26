@@ -14,11 +14,13 @@ Route::get('me', [AuthController::class, 'me']);
 
 // Admin Routes (Managing Trainers and Classes)
 Route::middleware(['auth:api', 'role:Admin'])->group(function () {
+
     // Trainer Management
     Route::get('/admin/trainers', [TrainerController::class, 'index']);
     Route::post('/admin/trainers', [TrainerController::class, 'store']);
     Route::put('/admin/trainers/{id}', [TrainerController::class, 'update']);
     Route::delete('/admin/trainers/{id}', [TrainerController::class, 'destroy']);
+
     
     // Class Management
     Route::get('/admin/classes', [GymClassController::class, 'index']);
@@ -28,6 +30,7 @@ Route::middleware(['auth:api', 'role:Admin'])->group(function () {
 // Trainer Routes (View Assigned Classes)
 Route::middleware(['auth:api', 'role:Trainer'])->group(function () {
     Route::get('/trainer/classes', [TrainerClassController::class, 'index']);
+    
 });
 
 // Trainee Routes (Profile Management and Class Booking)
